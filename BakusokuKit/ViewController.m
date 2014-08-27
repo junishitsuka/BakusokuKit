@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "IIViewDeckController.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,20 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.menuBotton.target = self.viewDeckController;
+    self.menuBotton.action = @selector(toggleRightView);
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)clickButton:(id)sender {
+    [self.viewDeckController toggleLeftViewAnimated:YES];
 }
 
 @end

@@ -7,13 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "IIViewDeckController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [self generateControllerStack];
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (IIViewDeckController*)generateControllerStack
+{
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *leftController = [mystoryboard instantiateViewControllerWithIdentifier:@"LeftView"];
+    
+    UIViewController *centerController = [mystoryboard instantiateViewControllerWithIdentifier:@"View"];
+    
+    IIViewDeckController* deckController = [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:leftController rightViewController:nil];
+    deckController.leftSize = 100;
+    
+    [deckController disablePanOverViewsOfClass:NSClassFromString(@"_UITableViewHeaderFooterContentView")];
+    return deckController;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

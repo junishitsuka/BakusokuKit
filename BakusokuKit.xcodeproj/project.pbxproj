@@ -21,6 +21,9 @@
 		BF28D59D199B8194009D7409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF28D57F199B8194009D7409 /* UIKit.framework */; };
 		BF28D5A5199B8194009D7409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF28D5A3199B8194009D7409 /* InfoPlist.strings */; };
 		BF28D5A7199B8194009D7409 /* BakusokuKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF28D5A6199B8194009D7409 /* BakusokuKitTests.m */; };
+		BF39A99019AE399B0020A3F2 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39A98F19AE399B0020A3F2 /* LeftViewController.m */; };
+		BF39A99319AE496C0020A3F2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39A99219AE496C0020A3F2 /* LoginViewController.m */; };
+		D08C67DC151447C48F0C1416 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A23CA1A3E194463BA3A04B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A23CA1A3E194463BA3A04B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD6016BE1C7408881C99AEA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BF28D578199B8194009D7409 /* BakusokuKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakusokuKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF28D57B199B8194009D7409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF28D57D199B8194009D7409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,10 @@
 		BF28D5A2199B8194009D7409 /* BakusokuKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BakusokuKitTests-Info.plist"; sourceTree = "<group>"; };
 		BF28D5A4199B8194009D7409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF28D5A6199B8194009D7409 /* BakusokuKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BakusokuKitTests.m; sourceTree = "<group>"; };
+		BF39A98E19AE399B0020A3F2 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		BF39A98F19AE399B0020A3F2 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		BF39A99119AE496C0020A3F2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BF39A99219AE496C0020A3F2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 				BF28D57E199B8194009D7409 /* CoreGraphics.framework in Frameworks */,
 				BF28D580199B8194009D7409 /* UIKit.framework in Frameworks */,
 				BF28D57C199B8194009D7409 /* Foundation.framework in Frameworks */,
+				D08C67DC151447C48F0C1416 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				BF28D5A0199B8194009D7409 /* BakusokuKitTests */,
 				BF28D57A199B8194009D7409 /* Frameworks */,
 				BF28D579199B8194009D7409 /* Products */,
+				7AD6016BE1C7408881C99AEA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,7 @@
 				BF28D57D199B8194009D7409 /* CoreGraphics.framework */,
 				BF28D57F199B8194009D7409 /* UIKit.framework */,
 				BF28D59A199B8194009D7409 /* XCTest.framework */,
+				3A23CA1A3E194463BA3A04B3 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +126,13 @@
 			children = (
 				BF28D58A199B8194009D7409 /* AppDelegate.h */,
 				BF28D58B199B8194009D7409 /* AppDelegate.m */,
+				BF39A98E19AE399B0020A3F2 /* LeftViewController.h */,
+				BF39A98F19AE399B0020A3F2 /* LeftViewController.m */,
 				BF28D58D199B8194009D7409 /* Main.storyboard */,
 				BF28D590199B8194009D7409 /* ViewController.h */,
 				BF28D591199B8194009D7409 /* ViewController.m */,
+				BF39A99119AE496C0020A3F2 /* LoginViewController.h */,
+				BF39A99219AE496C0020A3F2 /* LoginViewController.m */,
 				BF28D593199B8194009D7409 /* Images.xcassets */,
 				BF28D582199B8194009D7409 /* Supporting Files */,
 			);
@@ -159,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF28D5AA199B8194009D7409 /* Build configuration list for PBXNativeTarget "BakusokuKit" */;
 			buildPhases = (
+				EA3904311675420B96A63A3B /* Check Pods Manifest.lock */,
 				BF28D574199B8194009D7409 /* Sources */,
 				BF28D575199B8194009D7409 /* Frameworks */,
 				BF28D576199B8194009D7409 /* Resources */,
+				21940B29DEBE4C4BB5F422C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,14 +262,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21940B29DEBE4C4BB5F422C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3904311675420B96A63A3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF28D574199B8194009D7409 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF28D592199B8194009D7409 /* ViewController.m in Sources */,
+				BF39A99019AE399B0020A3F2 /* LeftViewController.m in Sources */,
 				BF28D58C199B8194009D7409 /* AppDelegate.m in Sources */,
 				BF28D588199B8194009D7409 /* main.m in Sources */,
+				BF39A99319AE496C0020A3F2 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +426,7 @@
 		};
 		BF28D5AB199B8194009D7409 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD6016BE1C7408881C99AEA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +440,7 @@
 		};
 		BF28D5AC199B8194009D7409 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD6016BE1C7408881C99AEA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +511,7 @@
 				BF28D5AC199B8194009D7409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF28D5AD199B8194009D7409 /* Build configuration list for PBXNativeTarget "BakusokuKitTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +520,7 @@
 				BF28D5AF199B8194009D7409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

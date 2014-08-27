@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *menuBotton;
+
+- (IBAction)clickButton:(id)sender;
+
 @end
